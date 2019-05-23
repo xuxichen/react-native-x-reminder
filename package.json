@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "name": "react-native-x-reminder",
-    "description": "react-native-x-reminder, pure javascript solution",
+    "description": "react-native-x-reminder, A Message Slide Or Show Reminder",
     "repository": {
         "type": "git",
         "url": "https://github.com/xuxichen/react-native-x-reminder"
