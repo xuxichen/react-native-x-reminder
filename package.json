@@ -4,7 +4,7 @@
     "description": "react-native-x-reminder, A Message Slide Or Show Reminder",
     "repository": {
         "type": "git",
-        "url": "https://github.com/xuxichen/react-native-x-reminder"
+        "url": "https://github.com/xuxichen/react-native-x-reminder.git"
     },
     "license": "MIT",
     "main": "./index.js",
@@ -17,6 +17,11 @@
         "Toast",
         "reminder"
     ],
+    "author": {
+        "name": "xuxichen",
+        "email": "chadxu9204@gmail.com"
+    },
+    "license": "MIT",
     "dependencies": {
         "react-native-root-siblings": "^3.2.1",
         "prop-types": "^15.5.10"
