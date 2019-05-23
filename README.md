@@ -12,7 +12,7 @@ yarn add react-native-x-reminder
 ```
 
 # Example
-In the Teaset package directory:
+In the react-native-x-reminder package directory:
 ```
 cd Example
 npm install
