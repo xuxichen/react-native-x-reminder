@@ -2,6 +2,9 @@
 
 A Message Slide Reminder, JS
 
+# ==Warning==
+**Because [react-native-root-siblings 3.2.1](https://github.com/magicismight/react-native-root-siblings.git)  Require React-Native version >= 0.47, So *++react-native-x-reminder++* Only supports React-Native version >= 0.47**
+
 # Installation
 ```
 npm install --save react-native-x-reminder
