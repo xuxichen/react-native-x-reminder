@@ -1,0 +1,13 @@
+*.pbxproj -text
+*.html linguist-language=JavaScript
+*.pbxproj linguist-language=JavaScript
+*.xml linguist-language=JavaScript
+*.java linguist-language=JavaScript
+*.m linguist-language=JavaScript
+*.xib linguist-language=JavaScript
+*.json linguist-language=JavaScript
+*.plist linguist-language=JavaScript
+*.h linguist-language=JavaScript
+*.jar linguist-language=JavaScript
+*.properties linguist-language=JavaScript
+*.xcscheme linguist-language=JavaScript
