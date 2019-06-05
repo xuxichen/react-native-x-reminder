@@ -2,7 +2,7 @@
  * @Author: Chad.Xuxichen
  * @Date: 2019-05-23 00:40:40
  * @LastEditors: Chad.Xuxichen
- * @LastEditTime: 2019-05-23 15:38:25
+ * @LastEditTime: 2019-06-05 23:16:51
  * @github: https://github.com/xuxichen
  * @Description: 
  */
@@ -69,7 +69,10 @@ export default class TabA extends Component {
             style: {backgroundColor: '#98adb8'},
             titleStyle: {},
             messageStyle: {color: '#000000'},
-            iconStyle: {},
+            iconStyle: {
+                width:60,
+                height: 60
+            },
             duration: 1000, //duration
             durationAnimated: 300, // durationAnimated 
             needPushNotifications: false, // is Not PushNotificationsModeStyle

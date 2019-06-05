@@ -2,7 +2,7 @@
  * @Author: Chad.Xuxichen
  * @Date: 2019-05-20 07:45:32
  * @LastEditors: Chad.Xuxichen
- * @LastEditTime: 2019-05-23 15:04:12
+ * @LastEditTime: 2019-06-05 23:13:00
  * @github: https://github.com/xuxichen
  * @Description: 
  */
@@ -419,6 +419,17 @@ export default class XReminderContainer extends Component {
         return {}
     }
     
+    initrightMaxWidthStyle() {
+        if (Object.keys(this.props.iconStyle).length>0 && this.props.iconStyle.width !== 'undefined' &&  this.props.iconStyle.width !== null) {
+            return {
+                maxWidth: windowWidth - this.props.iconStyle.width - 60 * ScreenScale
+            }
+        } else {
+            return {}
+        }
+        
+    }
+    
     renderImage() {
         if (!(typeof this.props.Icon === 'undefined' || this.props.Icon == null || this.props.Icon === '')) {
             if ((typeof this.props.Icon === 'string' && this.props.Icon !== 'none') || typeof this.props.Icon === 'number') {
@@ -485,12 +496,13 @@ export default class XReminderContainer extends Component {
         let AnimationTypeStyle = this.initAnimationTypeStyle()
         let OffsetAndInsetStyle = this.initOffsetAndInsetStyle()
         let pushNotificationsStyle = this.initPushNotificationsStyle()
+        let rightMaxWidthStyle = this.initrightMaxWidthStyle()
         return (
             <View pointerEvents="none" style={styles.transparentview}>
             <Animated.View style={[styles.animated, messageTypeStyle, AnimationTypeStyle,OffsetAndInsetStyle, this.props.style, pushNotificationsStyle]}>
                 <View style={styles.container} >
                     {this.renderImage()}
-                    <View style={styles.rightStyle} >
+                    <View style={[styles.rightStyle,rightMaxWidthStyle]} >
                         {this.renderTitle()}
                         {this.renderMessage()}
                     </View> 
@@ -532,7 +544,8 @@ const styles = StyleSheet.create({
     rightStyle: { 
         alignSelf: 'stretch', 
         justifyContent: 'center', 
-        marginLeft: 10*ScreenScale
+        marginLeft: 10*ScreenScale,
+        maxWidth: windowWidth - 100*ScreenScale,
     },
     titleStyle: {
         color: 'white', 

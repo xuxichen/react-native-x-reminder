@@ -11,7 +11,7 @@
     "react-native": "0.59.8",
     "react-native-gesture-handler": "^1.2.1",
     "react-native-root-siblings": "^3.2.1",
-    "react-native-x-reminder": "1.0.0",
+    "react-native-x-reminder": "0.0.2",
     "react-navigation": "^3.11.0"
   },
   "devDependencies": {
