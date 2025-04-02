@@ -5,6 +5,7 @@ import XReminder, {
     AnimationType
 } from './XReminder'
 
+
 export { 
     MessageType,
     PositionType,
